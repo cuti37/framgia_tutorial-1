@@ -1,16 +1,29 @@
 en:
+  layouts:
+    application:
+      title: "Ruby on Rails Tutorial Sample App"
+    footer:
+      about: "About"
+      contact: "Contact"
+      author: "The Ruby on Rails Tutorial by Michael Hartl"
+      facebook: "facebook.com/tuanhmice"
+    header:
+      home: "Home"
+      help: "Help"
+      login: "Log in"
+      sample_app: "Sample App"
   static_pages:
     about:
       about: "About"
-      page: "The Ruby on Rails Tutorial is abook and screencast seriesto teach web development 
-        with Ruby on Rails"
+      page: "The Ruby on Rails Tutorial is abook and screencast seriesto teach 
+        web development with Ruby on Rails"
     contact:
       contact: "Contact"
       page: "Contact the Ruby on Rails Tutorial about the sample app at the contact page."
     home:
       home: "Home"
       page: "This is the home page for the Ruby on Rails Tutorial sample application."
-      sample_app: "Sample App"
+      sample_app: "Welcome to the Sample App"
       signup: "Sign up now!"
     help:
       help: "Help"
