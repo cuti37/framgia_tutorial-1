@@ -1,0 +1,17 @@
+en:
+  static_pages:
+    about:
+      about: "About"
+      page: "The Ruby on Rails Tutorial is abook and screencast seriesto teach web development 
+        with Ruby on Rails"
+    contact:
+      contact: "Contact"
+      page: "Contact the Ruby on Rails Tutorial about the sample app at the contact page."
+    home:
+      home: "Home"
+      page: "This is the home page for the Ruby on Rails Tutorial sample application."
+      sample_app: "Sample App"
+      signup: "Sign up now!"
+    help:
+      help: "Help"
+      page: "Get help on the Ruby on Rails Tutorial at the Rails Tutorial help section"
