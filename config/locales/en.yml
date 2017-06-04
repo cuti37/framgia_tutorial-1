@@ -28,3 +28,18 @@ en:
     help:
       help: "Help"
       page: "Get help on the Ruby on Rails Tutorial at the Rails Tutorial help section"
+  shared:
+    error_messages:
+      error: "error"
+      form: "The form contains "
+  users:
+    create:
+      success_signup: "Welcome to the Sample app"
+      error_signup: "Sign up failed"
+    edit:
+      edit_profile: "Edit Profile"
+      update_profile: "Update Profile"
+    new:
+      create_account: "Create my account"
+      signup: "Sign up"
+      signup_path: "signup"
