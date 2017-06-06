@@ -8,6 +8,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
+      log_in @user
       flash[:success] = t ".success_signup"
       redirect_to @user
     else
@@ -28,7 +29,6 @@ class UsersController < ApplicationController
   def load_user
     @user = User.find_by id: params[:id]
     return if @user
-      render file: "public/404.html", status: :not_found, layout: false
-    end
+    render file: "public/404.html", status: :not_found, layout: false
   end
 end
