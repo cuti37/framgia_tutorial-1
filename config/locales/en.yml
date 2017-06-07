@@ -8,10 +8,16 @@ en:
       author: "The Ruby on Rails Tutorial by Michael Hartl"
       facebook: "facebook.com/tuanhmice"
     header:
+      account: "Account"
       home: "Home"
       help: "Help"
       login: "Log in"
+      logout: "Log out"
+      profile: "Profile"
       sample_app: "Sample App"
+      signup: "Sign up"
+      settings: "Settings"
+      users: "Users"
   static_pages:
     about:
       about: "About"
@@ -43,3 +49,11 @@ en:
       create_account: "Create my account"
       signup: "Sign up"
       signup_path: "signup"
+  sessions:
+    create:
+      error_login: "Invalid email/password combination"
+    new:
+      login: "Log in"
+      new_user?: "New user? "
+      signup_now: "Sign up now!"
+
