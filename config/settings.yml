@@ -1,6 +1,8 @@
 user:
+  avatar_size: 50
   maximum_name: 50
   maximum_email: 100
   minimum_password: 6
+  users_per_page: 10
 helper:
   avatar_size: 80

@@ -42,13 +42,28 @@ en:
     create:
       success_signup: "Welcome to the Sample app"
       error_signup: "Sign up failed"
+    destroy:
+      deleted_user: "User deleted"
+      delete_failed: "There was a problem deleting this item."
     edit:
-      edit_profile: "Edit Profile"
-      update_profile: "Update Profile"
+      change: Change
+      edit_path: "user_path(current_user)"
+      update_profile: "Update your profile"
+      save_change: "Save changes"
+      please_login: "Please log in"
+    index:
+      all_users: "All Users"
+      delete: "delete"
+      please_login: "Please log in"
+      sure: "You sure?"
     new:
       create_account: "Create my account"
       signup: "Sign up"
       signup_path: "signup"
+    update:
+      error_update: "Update failed"
+      update_success: "Update successful"
+      please_login: "Please log in"
   sessions:
     create:
       error_login: "Invalid email/password combination"
@@ -57,4 +72,3 @@ en:
       new_user?: "New user? "
       remember_me: "Remember me on this computer"
       signup_now: "Sign up now!"
-
