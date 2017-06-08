@@ -55,5 +55,6 @@ en:
     new:
       login: "Log in"
       new_user?: "New user? "
+      remember_me: "Remember me on this computer"
       signup_now: "Sign up now!"
 
