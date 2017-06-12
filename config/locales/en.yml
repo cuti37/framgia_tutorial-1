@@ -22,6 +22,17 @@ en:
       signup: "Sign up"
       settings: "Settings"
       users: "Users"
+  microposts:
+    create:
+      failed_create: "Failed create"
+      micropost_create: "Micropost created!"
+    destroy:
+      micropost_delete: "Micropost deleted"
+    micropost:
+      ago: " ago."
+      delete: "delete"
+      post: "Posted"
+      sure: "You sure?"
   password_resets:
     create:
       email_not_found: "Email address not found"
@@ -58,6 +69,12 @@ en:
     error_messages:
       error: "error"
       form: "The form contains "
+    micropost_form:
+      post: "Post"
+      compose: "Compose new micropost..."
+    user_info:
+      micropost: "micropost"
+      view_profile: "view my profile"
   users:
     create:
       check_email: "Please check your email to activate your account."
