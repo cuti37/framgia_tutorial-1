@@ -1,4 +1,8 @@
 en:
+  account_activations:
+    edit:
+      invalid: "Invalid activation link"
+      success: "Account activated!"
   layouts:
     application:
       title: "Ruby on Rails Tutorial Sample App"
@@ -40,6 +44,7 @@ en:
       form: "The form contains "
   users:
     create:
+      check_email: "Please check your email to activate your account."
       success_signup: "Welcome to the Sample app"
       error_signup: "Sign up failed"
     destroy:
@@ -67,8 +72,18 @@ en:
   sessions:
     create:
       error_login: "Invalid email/password combination"
+      invalid_activated: "Account not activated. Check your email for the activation link"
+      welcome_back: "Welcome back the Sample app"
     new:
       login: "Log in"
       new_user?: "New user? "
       remember_me: "Remember me on this computer"
       signup_now: "Sign up now!"
+  user_mailer:
+    account_activation:
+      activate: "Activate"
+      activation: "Account activation"
+      hi: "Hi"
+      sample_app: "Sample app"
+      welcome: "Welcome to the Sample App! Click on the link below to activate your account:"
+

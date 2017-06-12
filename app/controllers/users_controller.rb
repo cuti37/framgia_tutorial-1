@@ -3,8 +3,8 @@ class UsersController < ApplicationController
   before_action :load_user, except: [:create, :new, :index]
 
   def index
-    @users = User.select(:id, :name, :email, :is_admin).order(:id)
-      .paginate page: params[:page], per_page: Settings.user.users_per_page
+    @users = User.where(activated: true).select(:id, :name, :email, :is_admin)
+      .order(:id).paginate page: params[:page], per_page: Settings.user.users_per_page
   end
 
   def new
@@ -14,8 +14,8 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      log_in @user
-      flash[:success] = t ".success_signup"
+      @user.send_activation_email
+      flash[:info] = t ".check_email"
       redirect_to @user
     else
       flash.now[:danger] = t ".error_signup"
