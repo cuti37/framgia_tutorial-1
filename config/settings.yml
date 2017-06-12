@@ -6,3 +6,5 @@ user:
   users_per_page: 10
 helper:
   avatar_size: 80
+password:
+  time_reset: 2
