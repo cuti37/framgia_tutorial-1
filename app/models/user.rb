@@ -67,6 +67,10 @@ class User < ApplicationRecord
     reset_sent_at < Settings.password.time_reset.hours.ago
   end
 
+  def feed
+    Micropost.feed_load id
+  end
+
   private
 
   def email_downcase

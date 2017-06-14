@@ -1,4 +1,6 @@
 en:
+  micropost:
+    less_size: "should be less than 5MB"
   account_activations:
     edit:
       invalid: "Invalid activation link"
@@ -25,7 +27,7 @@ en:
   microposts:
     create:
       failed_create: "Failed create"
-      micropost_create: "Micropost created!"
+      create_micropost: "Micropost created!"
     destroy:
       micropost_delete: "Micropost deleted"
     micropost:
@@ -69,6 +71,8 @@ en:
     error_messages:
       error: "error"
       form: "The form contains "
+    feed:
+      micropost_feed: "Micropost Feed"
     micropost_form:
       post: "Post"
       compose: "Compose new micropost..."

@@ -9,6 +9,7 @@ class MicropostsController < ApplicationController
       flash[:success] = t ".create_micropost"
       redirect_to root_url
     else
+      @feed_items = []
       flash.now[:danger] = t ".failed_create"
       render "static_pages/home"
     end
@@ -26,7 +27,7 @@ class MicropostsController < ApplicationController
   private
 
   def micropost_params
-    params.require(:micropost).permit :content
+    params.require(:micropost).permit :content, :picture
   end
 
   def correct_user
