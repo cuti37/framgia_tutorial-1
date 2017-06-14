@@ -24,6 +24,9 @@ class UsersController < ApplicationController
   end
 
   def show
+    @microposts = @user.microposts.select(:id, :content, :user_id, :create_at)
+      .order(:create_at).paginate page: params[:page],
+      per_page: Settings.micropost.microposts_per_page
   end
 
   def edit
@@ -59,12 +62,5 @@ class UsersController < ApplicationController
     @user = User.find_by id: params[:id]
     
     valid_info @user
-  end
-
-  def logged_in_user
-    unless logged_in?
-      flash[:danger] = t ".please_login"
-      redirect_to root_path
-    end
   end
 end
