@@ -1,6 +1,7 @@
 micropost:
   content_size: 140
   microposts_per_page: 10
+  size_picture: 1
 user:
   avatar_size: 50
   maximum_name: 50

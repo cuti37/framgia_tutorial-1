@@ -3,5 +3,8 @@
   <div class="field">
     <%= f.text_area :content, placeholder: t(".compose") %>
   </div>
+  <span class="picture">
+    <%= f.file_field :picture %>
+  </span>
   <%= f.submit t(".post"), class: "btn btn-primary" %>
 <% end %>
