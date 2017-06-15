@@ -76,6 +76,9 @@ en:
     micropost_form:
       post: "Post"
       compose: "Compose new micropost..."
+    stats:
+      followers: "followers"
+      following: "following"
     user_info:
       micropost: "micropost"
       view_profile: "view my profile"
@@ -93,6 +96,12 @@ en:
       update_profile: "Update your profile"
       save_change: "Save changes"
       please_login: "Please log in"
+    follow:
+      follow: "Follow"
+    following:
+      following: "Following"
+    followers:
+      followers: "Followers"
     index:
       all_users: "All Users"
       delete: "delete"
@@ -102,6 +111,11 @@ en:
       create_account: "Create my account"
       signup: "Sign up"
       signup_path: "signup"
+    show_follow:
+      microposts: "Microposts:"
+      view_profile: "view my profile"
+    unfollow:
+      unfollow: "Unfollow"
     update:
       error_update: "Update failed"
       update_success: "Update successful"

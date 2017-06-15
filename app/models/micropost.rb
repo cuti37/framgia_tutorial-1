@@ -9,7 +9,8 @@ class Micropost < ApplicationRecord
   validate  :picture_size
 
   scope :sort_by_created_at, ->{order created_at: :desc}
-  scope :feed_load, ->id{where user_id: id}
+  scope :feed_load, lambda{|x,y|
+    where("user_id IN (?) OR user_id = ?", x, y)}
 
   private
 
